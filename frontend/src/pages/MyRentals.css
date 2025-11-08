@@ -1,0 +1,145 @@
+.my-rentals-page {
+  padding: 40px 0;
+  min-height: calc(100vh - 200px);
+}
+
+.page-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.page-subtitle {
+  font-size: 18px;
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 18px;
+  color: #6b7280;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.empty-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.empty-state h2 {
+  font-size: 28px;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.empty-state p {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.rentals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.rental-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.rental-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-color: #f3f4f6;
+  position: relative;
+}
+
+.rental-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.status-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.listed {
+  background-color: #16A34A;
+  color: white;
+}
+
+.status-badge.rented {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.rental-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rental-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.rental-category {
+  font-size: 14px;
+  color: #6b7280;
+  text-transform: capitalize;
+}
+
+.rental-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #16A34A;
+  margin: 8px 0;
+}
+
+.rental-contact {
+  font-size: 14px;
+  color: #4b5563;
+  margin-top: 4px;
+}
+
+.rental-actions {
+  margin-top: 12px;
+}
+
+.rental-actions .btn {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 28px;
+  }
+
+  .rentals-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
