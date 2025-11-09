@@ -18,8 +18,6 @@ const Browse = () => {
     { id: 10, name: 'Console Table', price: 42, category: 'table', image: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=400&h=300&fit=crop' }
   ];
 
-  const categories = ['all', 'sofa', 'chair', 'table'];
-
   const handleAddToCart = (item) => {
     alert(`${item.name} added to cart!`);
     // Here you would typically add to cart state or call an API
